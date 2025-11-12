@@ -178,7 +178,7 @@ body {
 
 /* Next participant */
 #participant-6 {
-	background-color: rgb(163, 164, 255);
+	background-image: url("../images/blue_flame.gif");
   border: 3px solid #000000;
 }
 #participant-6 .profile-photo {
