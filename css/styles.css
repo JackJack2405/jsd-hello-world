@@ -904,17 +904,57 @@ content: "17_KROEKPOL";
 
 
 /* Next participant */
+@keyframes glowingPann {
+  from { box-shadow: 0 0 25px #F7A8B8; }
+  to { box-shadow: 0 0 25px #55CDFC; }
+}
 #participant-39 {
-  background-color: white;
+  cursor: pointer;
+  background: linear-gradient(
+  to bottom,
+  rgba(85, 205, 252, 0.9),
+  rgba(247, 168, 184, 0.9),
+  rgba(255, 255, 255, 0.9)
+);
+  border: 3px solid #F7A8B8;
+  border-radius: 1.25rem;
+  box-shadow: 0 12.5px 25px #F7A8B8;
+  animation: glowingPann 2s ease-in-out infinite alternate;
+}
+#participant-39:hover {
+  background-image: url("../images/Pannnomaly2.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #F7A8B8;
+  border-radius: 1.25rem;
+  box-shadow: 0 12.5px 25px #F7A8B8;
+  animation: glowingPann 2s ease-in-out infinite alternate;
 }
 #participant-39 .profile-photo {
-  background-image: url("../images/participant-photo.png");
+	background-image: url("../images/Pannnomaly.jpg");
+  border: 3px solid #F5F5F5;
+  animation: glowingPann 2s ease-in-out infinite alternate;
+}
+#participant-39:hover .profile-photo {
+	visibility: hidden;
 }
 #participant-39 .participant-name::before {
   content: "39_Supawith(Pann)";
 }
 #participant-39 .participant-quote::before {
-  /* content: "Your inspirational quote here." */
+	content: "เกือบจะเท่ละ ดันลืมใส่ semicolon";
+}
+#participant-39:hover .participant-name::before {
+  visibility: hidden;
+}
+#participant-39:hover .participant-quote::before {
+	content: "IG: ไม่ให้หรอกนะ :3";
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #F5F5F5;
+  background-color: rgba(0,0,0,0.4);
+  padding: 3px 6px;
+  border-radius: 10px;
 }
 
 /* Next participant */
